@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="madhukar.com.example.dell.snti.Report">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <EditText
+            android:id="@+id/reportStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:maxLines="1"
+            android:focusable="false"
+            android:hint="Select Start Date"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edittextboundries"
+            />
+        <EditText
+            android:id="@+id/reportEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/reportStartDate"
+            android:focusable="false"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:hint="Select End Date"
+            android:textSize="17dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittextboundries"
+            />
+        <EditText
+            android:id="@+id/reportInstitute"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/reportEndDate"
+            android:hint="Select Institutes"
+            android:inputType="text"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:focusable="false"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittextboundries"
+            />
+        <EditText
+            android:id="@+id/reportBranch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/reportInstitute"
+            android:inputType="date"
+            android:focusable="false"
+            android:hint="Select Branchs"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittextboundries"
+            />
+
+        <EditText
+            android:id="@+id/reportGuide"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/reportBranch"
+            android:inputType="date"
+            android:focusable="false"
+            android:hint="Select Guides"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittextboundries"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/reportSubmit"
+            android:layout_below="@id/reportGuide"
+            android:layout_marginTop="20dp"
+            android:text="SUBMIT"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edittextboundries"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

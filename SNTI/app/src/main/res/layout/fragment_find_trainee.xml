@@ -1,0 +1,148 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="madhukar.com.example.dell.snti.FindTrainee">
+
+    <FrameLayout
+       android:id="@+id/findTraineeFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutForSearchById"
+        android:visibility="invisible">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="100dp"
+          android:layout_marginLeft="30dp"
+          android:layout_marginRight="30dp">
+
+        <TextView
+            android:id="@+id/vtLebel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Enter Reference Number"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/vtNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/vtLebel"
+            android:hint="eg : VT20172327"
+            android:paddingLeft="30dp"
+            android:textSize="18dp"
+            android:background="@drawable/edittextboundries"
+            />
+
+        <Button
+            android:id="@+id/vtSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/vtNumber"
+            android:text="SUBMIT"
+            android:textSize="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edittextboundries"
+            />
+      </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutForSearchByDetails"
+        android:visibility="visible">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        <EditText
+            android:id="@+id/traineeName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:maxLines="1"
+            android:inputType="textPersonName"
+            android:hint="Enter Name"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edittextboundries"
+            />
+        <EditText
+            android:id="@+id/traineeInstitute"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/traineeName"
+            android:focusable="false"
+            android:inputType="text"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:hint="Enter Institute"
+            android:textSize="17dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittextboundries"
+            />
+        <EditText
+            android:id="@+id/traineeBranch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/traineeInstitute"
+            android:hint="Enter Branch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:focusable="false"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittextboundries"
+            />
+        <EditText
+            android:id="@+id/traineeStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/traineeBranch"
+            android:inputType="date"
+            android:focusable="false"
+            android:hint="Enter Start Date"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittextboundries"
+            />
+
+        <EditText
+            android:id="@+id/traineeEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="date"
+            android:layout_below="@id/traineeStartDate"
+            android:focusable="false"
+            android:hint="Enter End Date"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittextboundries"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/detailSubmit"
+            android:layout_below="@id/traineeEndDate"
+            android:layout_marginTop="20dp"
+            android:text="SUBMIT"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/edittextboundries"
+            />
+        </RelativeLayout>
+    </RelativeLayout>
+    </FrameLayout>
+</FrameLayout>

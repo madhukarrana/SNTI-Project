@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">SNTI</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="designation">Designation</string>
+    <string name="contact">Contact</string>
+    <string name="email">Email</string>
+    <string name="description">Description</string>
+
+    <string-array name="paintings_titles">
+        <item>Saumendu Sanyal</item>
+        <item>Saumendu Sanyal</item>
+        <item>Saumendu Sanyal</item>
+        <item>Saumendu Sanyal</item>
+        <item>Saumendu Sanyal</item>
+    </string-array>
+
+    <string-array name="paintings_designation">
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+        <item>abc</item>
+    </string-array>
+
+    <string-array name="paintings_contact">
+        <item>9955177725</item>
+        <item>9955177725</item>
+        <item>9955177725</item>
+        <item>9955177725</item>
+        <item>9955177725</item>
+    </string-array>
+
+    <string-array name="paintings_email">
+        <item>madhukarrana1997@gmail.com</item>
+        <item>madhukarrana1997@gmail.com</item>
+        <item>madhukarrana1997@gmail.com</item>
+        <item>madhukarrana1997@gmail.com</item>
+        <item>madhukarrana1997@gmail.com</item>
+    </string-array>
+
+    <string-array name="paintings_description">
+        <item>some description about the above is here</item>
+        <item>some description about the above is here</item>
+        <item>some description about the above is here</item>
+        <item>some description about the above is here</item>
+        <item>some description about the above is here</item>
+    </string-array>
+
+    <array name="paintings_images">
+        <item>@drawable/snti</item>
+        <item>@drawable/snti</item>
+        <item>@drawable/snti</item>
+        <item>@drawable/snti</item>
+        <item>@drawable/snti</item>
+    </array>
+
+
+</resources>
